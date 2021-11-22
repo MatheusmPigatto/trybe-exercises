@@ -7,19 +7,39 @@
         .textStyle {
             font-size: 65px;
             color: orange;
+            font-family: sans-serif;
         }
         .listStyle {
             background-color: palegreen;
+        }
+        .paragraphStyle {
+            font-weight: 600;
+            font-size: 3em;
+            line-height: 90px;
+            text-align: center;
+            text-decoration: underline;
+        }
+        body {
+            font-size: 16px;
+        }
+        #amarelo {
+            background-color: yellow;
+        }
+        #vermelho {
+            background-color: red;
+        }
+        #marrom {
+            background-color: brown;
         }
     </style>
   </head>
   <body>
     <h1 class="textStyle">Exercícios 3.2</h1>
-    <p class="listStyle"> Qual é a sua cor favorita?</p>
+    <p class="listStyle paragraphStyle"> Qual é a sua cor favorita?</p>
     <ul class="listStyle">
-      <li>Amarelo</li>
-      <li>Vermelho</li>
-      <li>Marrom</li>
+      <li id="amarelo">Amarelo</li>
+      <li id="vermelho">Vermelho</li>
+      <li id="marrom">Marrom</li>
     </ul>
   </body>
 </html>
