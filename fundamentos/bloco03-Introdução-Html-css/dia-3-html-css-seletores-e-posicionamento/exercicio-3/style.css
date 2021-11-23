@@ -1,0 +1,14 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    font-size: larger;
+    background-color: blueviolet;
+    color: chartreuse;
+    transition:cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+li {
+    list-style: none;
+}
