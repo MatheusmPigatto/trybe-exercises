@@ -6,7 +6,7 @@ for(let i = 0; i <= n; i += 1){
 
  */
 
-let n = 2;
+let n = 3;
 let asterisco = '*';
 
 for(let i = 0;  i < n; i+=1){
