@@ -92,13 +92,14 @@
 
       let listItems = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
       let list = document.createElement('ul');
+      list.className = 'iterador'
       section3.appendChild(list);
 
       for(num of listItems){
         let litem = num;
         let item = document.createElement('li');
         item.innerText = litem;
-        section3.appendChild(item);
+        list.appendChild(item);
       }
 
       let h3 = document.createElement('h3');
@@ -113,6 +114,11 @@
       nMain.removeChild(section2)
 
       section3.style.marginRight = 'auto';
+
+      nSection.style.backgroundColor = 'green';
+
+      let iterado = document.querySelector('.iterador').lastChild;
+
 
 
     </script>
