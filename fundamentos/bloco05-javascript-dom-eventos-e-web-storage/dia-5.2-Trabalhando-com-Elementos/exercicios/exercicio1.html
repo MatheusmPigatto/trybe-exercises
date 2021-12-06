@@ -101,18 +101,18 @@
         section3.appendChild(item);
       }
 
+      let h3 = document.createElement('h3');
       for(let i = 0; i < 3; i+=1){
-        let h3 = document.createElement('h3');
         nMain.appendChild(h3);
       }
 
       nTitle.className = 'title';
 
-      h3.className = 'description'
+      h3.className = 'description';
 
-      
+      nMain.removeChild(section2)
 
-
+      section3.style.marginRight = 'auto';
 
 
     </script>
