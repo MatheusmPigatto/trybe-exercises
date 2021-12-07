@@ -92,7 +92,6 @@
 
       let listItems = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
       let list = document.createElement('ul');
-      list.className = 'iterador'
       section3.appendChild(list);
 
       for(num of listItems){
@@ -117,10 +116,13 @@
 
       nSection.style.backgroundColor = 'green';
 
-      let iterado = document.querySelector('.iterador').lastChild;
+      let iterado = document.querySelectorAll('li');
 
-
-
+      for(num of iterado){
+        if(num.innerText === 'dez' || num.innerText === 'nove'){
+          list.removeChild(num)
+        }
+      }
     </script>
   </body>
 </html>
