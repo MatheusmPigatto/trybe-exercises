@@ -48,10 +48,12 @@ button.addEventListener('click', function changeColor () {
     if(holiday[0].style.backgroundColor == 'green'){
         for(i of holiday){
             i.style.backgroundColor = 'rgb(238,238,238)'
+            i.style.color = '#777'
         }
     } else {
         for(i of holiday){
             i.style.backgroundColor = 'green'
+            i.style.color = 'red'
         }
     }
 })
@@ -83,3 +85,30 @@ function click () {
     })
 }
 click();
+// Ex 6: resolucao sem event.target
+/* function mouseOver () {
+    let days = document.querySelectorAll('.day');
+    for (let i = 0; i < days.length; i+=1) {
+        days[i].addEventListener('mouseover', function () {
+            days[i].style.fontSize = '40px'
+        });
+        days[i].addEventListener('mouseout', function() {
+            days[i].style.fontSize = '20px'
+        })
+    }
+}
+mouseOver(); */
+// Ex 6: resolucao com event.target
+function mouseOver (event) {
+    event.target.style.fontSize = '60px'
+}
+
+function mouseOut (event) {
+    event.target.style.fontSize = '20px'
+}
+
+let dias = document.querySelectorAll('.day');
+for(element of dias) {
+    element.addEventListener('mouseover', mouseOver);
+    element.addEventListener('mouseout', mouseOut)
+}
