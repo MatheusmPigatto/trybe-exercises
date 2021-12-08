@@ -40,4 +40,18 @@ function createButton (str) {
     button.innerHTML = str
     insert.appendChild(button);
 }
-createButton('HOLIDAY');
+createButton('Feriados');
+// Ex 3:
+let button = document.getElementById('btn-holiday');
+button.addEventListener('click', function changeColor () {
+    let holiday = document.querySelectorAll('.holiday')
+    if(holiday[0].style.backgroundColor == 'green'){
+        for(i of holiday){
+            i.style.backgroundColor = 'rgb(238,238,238)'
+        }
+    } else {
+        for(i of holiday){
+            i.style.backgroundColor = 'green'
+        }
+    }
+})
