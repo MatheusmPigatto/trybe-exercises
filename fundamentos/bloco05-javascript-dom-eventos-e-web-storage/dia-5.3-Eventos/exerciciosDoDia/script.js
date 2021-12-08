@@ -65,3 +65,21 @@ function fridayButton (str) {
 }
 fridayButton('Sexta-feira');
 // Ex 5:
+function click () {
+    let button = document.querySelector('#btn-friday');
+    button.addEventListener('click', function addText () {
+        let friday = document.querySelectorAll('.friday');
+        let firstFriday = 4
+        if(friday[0].innerHTML ==firstFriday) {
+            for(day of friday) {
+                day.innerHTML = 'SEXTOU!'
+            }
+        } else if (friday[0].innerHTML !== firstFriday) {
+            friday[0].innerHTML = 4;
+            friday[1].innerHTML = 11;
+            friday[2].innerHTML = 18;
+            friday[3].innerHTML = 25;
+        }   
+    })
+}
+click();
