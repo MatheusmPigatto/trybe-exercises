@@ -112,3 +112,13 @@ for(element of dias) {
     element.addEventListener('mouseover', mouseOver);
     element.addEventListener('mouseout', mouseOut)
 }
+// Ex 7: 
+function tarefa (str) {
+    let insert = document.querySelector('.my-tasks');
+    console.log(insert)
+    let task = document.createElement('span');
+    task.className = 'my-tasks'
+    task.innerText = str;
+    insert.appendChild(task);
+}
+
