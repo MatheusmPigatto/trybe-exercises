@@ -55,3 +55,13 @@ button.addEventListener('click', function changeColor () {
         }
     }
 })
+// Ex 4:
+function fridayButton (str) {
+    let insert = document.querySelector('.buttons-container');
+    let friday = document.createElement('button');
+    friday.innerHTML = str;
+    friday.id = 'btn-friday';
+    insert.appendChild(friday);
+}
+fridayButton('Sexta-feira');
+// Ex 5:
