@@ -121,4 +121,11 @@ function tarefa (str) {
     task.innerText = str;
     insert.appendChild(task);
 }
-
+// Ex 8:
+function addColor (color) {
+    let receive = document.querySelectorAll('.my-tasks');
+    let insert = document.createElement('div');
+    insert.className = 'task'
+    insert.backgroundColor = color
+    receive.appendChild(insert);
+}
