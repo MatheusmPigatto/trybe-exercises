@@ -115,17 +115,30 @@ for(element of dias) {
 // Ex 7: 
 function tarefa (str) {
     let insert = document.querySelector('.my-tasks');
-    console.log(insert)
     let task = document.createElement('span');
     task.className = 'my-tasks'
     task.innerText = str;
     insert.appendChild(task);
 }
+tarefa('MATAR MONKEY DUNKEY')
 // Ex 8:
 function addColor (color) {
-    let receive = document.querySelectorAll('.my-tasks');
+    let receive = document.querySelector('.my-tasks');
     let insert = document.createElement('div');
     insert.className = 'task'
-    insert.backgroundColor = color
+    insert.style.backgroundColor = color
     receive.appendChild(insert);
 }
+addColor('red')
+//Ex 9:
+function clickColor () {
+    let receive = document.querySelector('.task');
+    if(receive.className == 'task'){
+        receive.classList.add('selected');
+    } else {
+        receive.className = 'task'
+    }
+}
+let divColor = document.querySelector('.task');
+divColor.addEventListener('click', clickColor);
+
