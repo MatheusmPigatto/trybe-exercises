@@ -130,7 +130,7 @@ function addColor (color) {
     receive.appendChild(insert);
 }
 addColor('red')
-//Ex 9:
+//  Ex 9:
 function clickColor () {
     let receive = document.querySelector('.task');
     if(receive.className == 'task'){
@@ -141,4 +141,19 @@ function clickColor () {
 }
 let divColor = document.querySelector('.task');
 divColor.addEventListener('click', clickColor);
+// Ex 10:
+function dateSelect(event) {
+    if(event.target.style.color === 'red'){
+        event.target.style.color = 'rgb(119,119,119)' 
+    }   else {
+        event.target.style.color = 'red'
+    }
+}
+function addEventDays () {
+    let days = document.querySelectorAll('.day');
+    for(d of days){
+        d.addEventListener('click', dateSelect)
+    }
+}
+addEventDays();
 
