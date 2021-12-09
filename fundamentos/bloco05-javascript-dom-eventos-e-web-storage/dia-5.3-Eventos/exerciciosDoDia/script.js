@@ -157,3 +157,8 @@ function addEventDays () {
 }
 addEventDays();
 
+function addCompromissos () {
+    let input = document.getElementById('task-input').value
+    console.log(input.innerHTML)
+}
+addCompromissos();
