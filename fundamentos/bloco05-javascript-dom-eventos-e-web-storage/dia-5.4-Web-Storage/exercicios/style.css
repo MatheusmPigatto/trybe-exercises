@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+}
+.titulo {
+    padding: 20px;
+    width: 100%;
+    background-color: greenyellow;
+}
+.titulo h1 {
+    text-align: center;
+}
+nav {
+    text-align: center;
+    background-color: grey;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}
+.background-color {
+    padding-top: 10px;
+    display: inline-block;
+}
+.text-color {
+    display: inline-block;
+}
+.font-size {
+    display: inline-block;
+}
+.line-spacement {
+    display: inline-block;
+}
+.font-select {
+    display: inline-block;
+}
+.text-house {
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.text {
+    text-align: justify;
+    margin-top: 100px;
+}
