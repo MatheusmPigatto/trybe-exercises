@@ -5,3 +5,97 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+
+  * {
+      margin-top: 0;
+  }
+
+  header {
+      background-color: wheat;
+  }
+
+  header p {
+      text-align: center;
+      font-size: x-large ;
+      padding-top: 20px;
+  }
+
+  nav div{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+  }
+  nav div a {
+      background-color: lightblue;
+      border-radius: 4px;
+      padding: 3px;
+  }
+
+  .container {
+      margin: 10px;
+  }
+
+  .aside-one {
+      margin-top: 20px;
+  }
+
+  .aside-one h2 {
+      font-size: 20px;
+      text-align: center;
+  }
+
+  .aside-one ul {
+      list-style: none;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  }
+
+  .aside-two h2{
+      font-size: 20px;
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  .aside-two ul {
+      list-style: none;
+      text-align: justify;
+  }
+
+  .main-content {
+      background-color: #dbe1f1;
+      padding: 10px;
+  }
+  .main-content h1{
+      margin-top: 40px;
+      font-size: 25px;
+      text-align: center;
+  }
+
+  .main-content p {
+      text-align: justify;
+      margin: 10px;
+  }
+
+  footer h3 {
+      font-size: 20px;
+      margin-top: 40px;
+      text-align: center;
+  }
+
+  footer p {
+      padding: 10px;
+      text-align: justify;
+  }
+  
+  @media  screen and (min-width: 768) {
+      header {
+          display: inline-block;
+      }
+
+      .aside-one {
+          display: inline-block|;
+      }
+  }
