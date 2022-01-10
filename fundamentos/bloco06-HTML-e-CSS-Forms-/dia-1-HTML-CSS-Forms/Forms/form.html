@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="GET" enctype="multipart/form-data">
+
+        <fieldset>
+            <label for="Texto">Nome:</label>
+            <input type="text" name="Texto" max= "40" required placeholder="digite seu nome">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" required placeholder="digite seu email">
+            <br>
+            <label for="CPF">CPF:</label>
+            <input type="text" name="CPF" max="11" required placeholder="digite seu CPF">
+            <label for="adress">Endereço:</label>
+            <input type="text" name="adress" max="200" required placeholder="digite seu endereço">
+            <br>
+            <label for="city">Cidade:</label>
+            <input type="text" name="city" max="28" required placeholder="digite sua cidade">
+            <label for="estado">Seu Estado:</label>
+            <select name="estado" id="estado" required></select>
+            <label for="tipo">Tipo:</label>
+            <input required type="radio" name="tipo">Casa
+            <input required type="radio" name="tipo">Apartamento
+        </fieldset>
+        
+        <fieldset>
+            <textarea name="resume" id="resumo" cols="30" rows="10" maxlength="1000" required>Insira o resumo da sua ultima experiencia profissional</textarea>
+            <label for="cargo">Seu cargo anterior:</label>
+            <input type="text" name="cargo" max="40" required>
+            <label for="descricao">Descreva sua Função:</label>
+            <input type="text" max="500" required>
+            <br>
+            <label for="data">Data: </label>
+            <input type="text" name="data" required id="date" placeholder="dd/mm/aaaa">
+        </fieldset>
+        <button type="submit" id="send">Enviar</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
