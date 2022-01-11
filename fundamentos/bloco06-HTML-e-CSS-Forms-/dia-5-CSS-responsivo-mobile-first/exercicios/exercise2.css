@@ -229,5 +229,13 @@ footer p {
 
     footer {
         margin: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        max-width: 1300px;
     }
 }
