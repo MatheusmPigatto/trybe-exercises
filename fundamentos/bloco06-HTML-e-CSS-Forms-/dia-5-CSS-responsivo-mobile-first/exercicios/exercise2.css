@@ -90,3 +90,106 @@ footer h3 {
 footer p {
     font-size: 10px;
 }
+
+@media  screen and (min-width: 800px) {
+
+    body {
+        background-color: #FFEEAD;
+    }
+    header {
+        background-color: #D9534F;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;
+        padding: 10px 23px;
+    }
+
+    nav{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        font-size: 20px;
+        background-color: #FFAD60;
+        width: 300px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .container-ul div {
+        background-color: #FFAD60;
+        align-self: center;
+    }
+
+    .aside-one {
+        margin: 100px 60px;
+    }
+
+    .aside-one h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .aside-one ul { 
+        font-size: 25px;
+    }
+
+    .aside-two {
+        margin: 100px 60px;
+    }
+
+    .aside-two h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .aside-two ul li {
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .main-content {
+        margin: 100px 60px;
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+
+    .main-content p {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    footer {
+        margin: 100px 60px;
+    }
+
+    footer h3 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (min-width: 1300px) {
+    body {
+        background-color: #FFFDDE;
+    }
+
+    header {
+        background-color: #D9D7F1;
+    }
+}
