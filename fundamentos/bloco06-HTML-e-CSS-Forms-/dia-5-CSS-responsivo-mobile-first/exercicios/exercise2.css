@@ -191,5 +191,43 @@ footer p {
 
     header {
         background-color: #D9D7F1;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container-ul {
+        background-color: #E7FBBE;
+        width: 400px;
+    }
+
+    .container-ul a {
+        background-color: #E7FBBE;
+        font-size: 30px;
+    }
+
+    .container-desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 150px;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
+    .main-content p {
+        max-width: 1300px;
+    }
+
+    footer {
+        margin: 150px;
     }
 }
