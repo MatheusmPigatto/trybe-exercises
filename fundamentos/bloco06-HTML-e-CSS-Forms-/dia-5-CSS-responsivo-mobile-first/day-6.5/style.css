@@ -86,7 +86,7 @@ body {
 }
     
     @media screen and (max-width: 500px){
-        p.trick {
+        body {
             background-color: black;
         }
   } 

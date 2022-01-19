@@ -1,0 +1,241 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+  }
+
+header {
+    background-color: #072227;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px 23px;
+}
+
+nav div {
+    font-size: 20px;
+    background-color: #35858B;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+body {
+    background-color: #AEFEFF;
+    color: black;
+}
+
+.aside-one {
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+}
+
+.aside-one h2 {
+    margin-bottom: 20px;
+}
+
+.aside-one ul li{
+    margin-top: 15px;
+    list-style: none;
+}
+
+.aside-two {
+    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.aside-two h2 {
+    margin-bottom: 20px;
+}
+
+.aside-two ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.main-content {
+    margin: 20px;
+    text-align: justify;
+}
+
+.main-content h1 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.main-content p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin: 20px;
+}
+
+footer h3 {
+    margin-bottom: 25px;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+@media  screen and (min-width: 800px) {
+
+    body {
+        background-color: #FFEEAD;
+    }
+    header {
+        background-color: #D9534F;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 50px;
+        padding: 10px 23px;
+    }
+
+    nav{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        font-size: 20px;
+        background-color: #FFAD60;
+        width: 300px;
+        border-radius: 2px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .container-ul div {
+        background-color: #FFAD60;
+        align-self: center;
+    }
+
+    .aside-one {
+        margin: 100px 60px;
+    }
+
+    .aside-one h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .aside-one ul { 
+        font-size: 25px;
+    }
+
+    .aside-two {
+        margin: 100px 60px;
+    }
+
+    .aside-two h2 {
+        margin-bottom: 40px;
+        font-size: 40px;
+    }
+
+    .aside-two ul li {
+        font-size: 20px;
+        font-style: italic;
+    }
+
+    .main-content {
+        margin: 100px 60px;
+    }
+
+    .main-content h1 {
+        font-size: 50px;
+        margin-bottom: 80px;
+    }
+
+    .main-content p {
+        font-size: 30px;
+        margin-bottom: 60px;
+    }
+
+    footer {
+        margin: 100px 60px;
+    }
+
+    footer h3 {
+        font-size: 30px;
+    }
+
+    footer p {
+        font-size: 20px;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (min-width: 1300px) {
+    body {
+        background-color: #FFFDDE;
+    }
+
+    header {
+        background-color: #D9D7F1;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .container-ul {
+        background-color: #E7FBBE;
+        width: 400px;
+    }
+
+    .container-ul a {
+        background-color: #E7FBBE;
+        font-size: 30px;
+    }
+
+    .container-desktop {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        margin: 150px;
+    }
+
+    .main-content h1 {
+        text-align: center;
+    }
+
+    .main-content p {
+        max-width: 1300px;
+    }
+
+    footer {
+        margin: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer p {
+        max-width: 1300px;
+    }
+}
