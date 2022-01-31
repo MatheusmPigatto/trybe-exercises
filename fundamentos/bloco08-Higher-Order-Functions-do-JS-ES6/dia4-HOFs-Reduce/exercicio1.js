@@ -1,4 +1,15 @@
-const books = [
+const arrays = [
+    ['1', '2', '3'],
+    [true],
+    [4, 5, 6],
+  ];
+  
+  function flatten() {
+      const reducer = (a, b) => a + b
+    return arrays.reduce(reducer)
+  }
+
+  const books = [
     {
       id: 1,
       name: 'As Crônicas de Gelo e Fogo',
@@ -63,42 +74,35 @@ const books = [
   
   // Adicione o código do exercício aqui:
 
-  function authorBornIn1947() {
-    return books.find(book => book.author.birthYear === 1947);
-  }
-  
-  function smallerName() {
-    let arr = [];
-    books.forEach((book, index) => {
-        arr.push([book.name.length, index]);
-        arr = arr.sort((a, b) => a[0] - b[0]);
-    })
-    let nameBook = books[arr[0][1]];
-    return nameBook;
+  const reduceNames = () => {
+      return books.reduce((a, b) => a + b.author.name + ', ', '')
+  };
+
+/*   console.log(reduceNames()) */
+
+  const averageAge = () => {
+    return books.reduce((a, b) => (a + (b.releaseYear - b.author.birthYear)), 0) / books.length
   }
 
-  function getNamedBook() {
-    return books.find(book => book.name.length === 26);
+/*   console.log(averageAge()) */
+
+  const longestNameBook = () => {
+    return books.reduce((a, b) => (a) < (b.name.length) ? b : a)
   }
 
-  function booksOrderedByReleaseYearDesc() {
-    return books.sort((a, b) => a.releaseYear < b.releaseYear ? 1 : -1)
-  }
+/*   console.log(longestNameBook()) */
 
-  function everyoneWasBornOnSecXX() {
-      return books.every(book => book.author.birthYear > 1900)
-  }
+const names = [
+  'Aanemarie', 'Adervandes', 'Akifusa',
+  'Abegildo', 'Adicellia', 'Aladonata',
+  'Abeladerco', 'Adieidy', 'Alarucha',
+];
 
-  function someBookWasReleaseOnThe80s() {
-    return books.some(book => book.releaseYear > 1980 && book.releaseYear < 1990)
+function containsA() {
+  const name = (acc, letter) => {
+    let counter;
+    letter === 'a' || letter === 'A' ? counter += 1 : 0
   }
-
-  function authorUnique() {
-      const birthYears = [];
-      books.forEach(book => birthYears.push(book.author.birthYear))
-      console.log(birthYears)
-      return birthYears.some((val, i) => birthYears.indexOf(val) !== i)
-  }
-  console.log(authorUnique());
-  
-  
+  return names.reduce((acc, nome) => nome.reduce(name))
+}
+console.log(containsA())
