@@ -1,0 +1,11 @@
+{
+  "name": "mocha-e-chai",
+  "version": "1.0.0",
+  "description": "Exercicios para treinar mocha e chai",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "author": "Matheus Pigatto",
+  "license": "ISC"
+}

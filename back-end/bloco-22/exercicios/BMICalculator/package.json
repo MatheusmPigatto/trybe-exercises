@@ -1,0 +1,20 @@
+{
+  "name": "bmicalculator",
+  "version": "1.0.0",
+  "description": "BMI calculator",
+  "main": "bmi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bmi": "node bmi.js"
+  },
+  "keywords": [
+    "bmi",
+    "calculator",
+    "node"
+  ],
+  "author": "Matheus Martins Pigatto",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
